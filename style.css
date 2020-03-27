@@ -32,11 +32,6 @@ body {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  position: relative;
-  height: inherit;
-  padding: 0.2rem 1rem;
-  font-size: 2rem;
-  align-items: center;
 }
 .nav__options {
   display: flex;
@@ -77,4 +72,24 @@ body {
 }
 .nav__subscription > button:hover {
   background-color: #326890;
+}
+
+/* Main section */
+
+.main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.main__header {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.main__header-title {
+  font-style: italic;
+  font-size: 3rem;
+}
+.main__header-img {
+  width: 100%;
 }
