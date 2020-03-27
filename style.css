@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Playfair+Display:400,700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -22,7 +23,7 @@ html {
 body {
   background-color: #fff;
   font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header {
@@ -107,6 +108,7 @@ figcaption {
 .main__content-box {
   max-width: 600px;
   width: 100%;
+  font-family: "Playfair Display", serif;
   margin: 0 auto;
   grid-column: 2 / span 1;
 }
@@ -191,8 +193,50 @@ figcaption {
   font-weight: bold;
   font-size: 1.6rem;
   border-bottom: 2px solid #e2e2e2;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
 .subscribe__times {
   color: #326890;
+}
+
+/* inflation theory section */
+
+.inflation__section {
+  margin: 0 12rem;
+}
+
+.inflation__section p {
+  font-size: 1.3rem;
+  color: #66686b;
+  margin: 0.7rem 0 1.5rem;
+}
+
+.inflation__section-content {
+  display: grid;
+  grid-template: 27rem 27rem / repeat(4, 1fr);
+  gap: 1rem;
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.card {
+  margin-top: 15rem;
+  font-size: 1.2rem;
+}
+.inflation__section-author {
+  position: relative;
+  margin-top: 4rem;
+  font-size: 1.3rem;
+}
+
+.inflation__section-author::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: black;
+  top: -1rem;
+  width: 5rem;
+  left: 0;
 }
