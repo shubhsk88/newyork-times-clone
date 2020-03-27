@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
 }
 a,
 button {
@@ -18,7 +22,7 @@ html {
 body {
   background-color: #fff;
   font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -79,7 +83,7 @@ body {
 /* Main section */
 
 .main {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
@@ -101,9 +105,10 @@ figcaption {
 }
 
 .main__content-box {
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
   margin: 0 auto;
+  grid-column: 2 / span 1;
 }
 
 .author {
@@ -133,4 +138,30 @@ figcaption {
 
 .social > * {
   margin: 1.4rem;
+}
+
+.main__text {
+  line-height: 1.6;
+}
+.main__text > p {
+  font-size: 1.9rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 2.6rem;
+}
+
+/* GRID TEST */
+
+.main__content-container {
+  display: grid;
+  grid-template: 1fr / 1fr auto 1fr;
+  gap: 8rem;
+}
+.main__content-container > div {
+  width: 100%;
+}
+
+.main__content-editor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
