@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -17,8 +17,8 @@ html {
 
 body {
   background-color: #fff;
-  font-size: 1.4rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -29,9 +29,11 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  max-width: 1400px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+  align-items: center;
+  height: inherit;
 }
 .nav__options {
   display: flex;
@@ -83,7 +85,7 @@ body {
   padding: 0 1rem;
 }
 .main__header {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 2.5rem;
 }
 .main__header-title {
@@ -92,4 +94,43 @@ body {
 }
 .main__header-img {
   width: 100%;
+}
+
+figcaption {
+  width: 85%;
+}
+
+.main__content-box {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.author {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+.author__link {
+  border-bottom: 3px solid #e2e2e2;
+}
+.author__link:hover {
+  border: none;
+}
+
+.main__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+}
+.date {
+  color: #333;
+  font-size: 1.2rem;
+  padding: 2rem 0rem;
+}
+
+.social > * {
+  margin: 1.4rem;
 }
