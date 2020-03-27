@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -22,7 +22,7 @@ html {
 body {
   background-color: #fff;
   font-size: 2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -125,11 +125,24 @@ figcaption {
 .main__details {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .social {
   display: flex;
+
+  align-items: center;
+  /* margin-top: -2.4rem; */
 }
+.icons {
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+
+  background-color: #bab4b4;
+  border-radius: 100%;
+}
+
 .date {
   color: #333;
   font-size: 1.2rem;
@@ -164,4 +177,22 @@ figcaption {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.pre__comment {
+  border-bottom: 2px solid #e2e2e2;
+  padding-bottom: 2rem;
+}
+
+.thanking__comment {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 2rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #e2e2e2;
+  margin-bottom:2rem;
+}
+.subscribe__times {
+  color: #326890;
 }
