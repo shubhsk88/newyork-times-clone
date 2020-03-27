@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+a,
+button {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
 }
 
 html {
@@ -11,32 +18,63 @@ html {
 body {
   background-color: #fff;
   font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
   height: 4rem;
   width: 100vw;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e2e2e2;
 }
 .nav {
   display: flex;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 1400px;
   width: 100%;
-  margin:0 auto;
-
-  /* padding-right: 10rem; */
-  font-size:2rem;
-
+  margin: 0 auto;
+  position: relative;
+  height: inherit;
+  padding: 0.2rem 1rem;
+  font-size: 2rem;
   align-items: center;
 }
 .nav__options {
   display: flex;
+  align-items: center;
 }
 .nav__options > * {
-  margin-right: 2rem;
+  margin-right: 3rem;
+}
+.nav__logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 4px;
+  bottom: 0;
+  width: 18rem;
+}
+.nav__category,
+.nav__subscription > button {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav__category {
+  font-size: 1.7rem;
 }
 
 .logo__image {
-  width: 18rem;
+  width: inherit;
+}
+
+.nav__subscription > button {
+  border: none;
+  padding: 0.9rem;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.1rem;
+  background-color: #537995;
+}
+.nav__subscription > button:hover {
+  background-color: #326890;
 }
