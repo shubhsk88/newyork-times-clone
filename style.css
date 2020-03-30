@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Playfair+Display:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Playfair+Display:400,700&display=swap');
 
 * {
   padding: 0;
@@ -23,7 +23,7 @@ html {
 body {
   background-color: #fff;
   font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -102,7 +102,7 @@ body {
   margin-top: 2.5rem;
 }
 .main__header-title {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-style: italic;
   font-size: 3.5rem;
   margin: 2rem auto;
@@ -112,26 +112,38 @@ body {
   width: 100%;
 }
 
+.bold {
+  font-weight: bold;
+}
+.iframe {
+  width: 560px;
+  height: 315px;
+  border: none;
+}
 .main__header figcaption {
   width: 85%;
   font-size: 1.5rem;
   color: #636161;
 }
+.grid-item img {
+  width: 100%;
+}
 
 .main__content-box {
   max-width: 600px;
   width: 100%;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   margin: 0 auto;
   grid-column: 2 / span 1;
 }
 
 .author {
   font-size: 2rem;
+  font-weight: bold;
   margin-top: 4rem;
 }
 .author__link {
-  border-bottom: 3px solid #e2e2e2;
+  border-bottom: 3px solid #faf4f4;
 }
 .author__link:hover {
   border: none;
@@ -155,7 +167,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #bab4b4;
+  background-color: #eee;
   border-radius: 100%;
   font-size: 1.2rem;
 }
@@ -179,7 +191,8 @@ body {
   margin-bottom: 2.6rem;
 }
 .main__text a {
-  color: #3b6486;
+  color: #1b78c5;
+  font-weight: 500;
   text-decoration: underline;
 }
 .quotes {
@@ -217,7 +230,7 @@ body {
 }
 .thanking__comment::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 15%;
   height: 100%;
   border-bottom: 1px solid rgb(172, 170, 170);
@@ -245,23 +258,35 @@ body {
   margin-top: 3rem;
 }
 
+.main__footer {
+  font-size: 1.2rem;
+  color: grey;
+}
+.main__footer a {
+  text-decoration: underline;
+  color: grey;
+}
+.main__footer a:hover {
+  text-decoration: none;
+}
+
 /* inflation theory section */
 
 .inflation__section {
-  margin: 0 12rem;
+  margin: 0rem 12rem 8rem 12rem;
 }
 
 .inflation__section p {
   font-size: 1.3rem;
   color: #66686b;
-  margin: 0.7rem 0 1.5rem;
+  margin: 0.7rem 0 4rem;
 }
 
 .inflation__section-content {
   display: grid;
   grid-template: 27rem 27rem / repeat(4, 1fr);
   gap: 1rem;
-  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-image: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -273,12 +298,18 @@ body {
 }
 .inflation__section-author {
   position: relative;
-  margin-top: 4rem;
+  margin-top: 8rem;
   font-size: 1.3rem;
+}
+.figcaption {
+  font-size: 1.2rem;
+  color: grey;
+  margin-bottom: 3rem;
+  width: 80%;
 }
 
 .inflation__section-author::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 1px;
   background-color: black;
@@ -323,7 +354,8 @@ body {
 }
 
 .grid-container h4 {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
 }
 .related__content-grid {
   display: grid;
@@ -353,21 +385,30 @@ body {
   margin-top: 2rem;
   font-size: 1.4rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(187, 186, 186);
 }
 .related__popular div:nth-child(1) {
   margin-top: 0;
 }
 .related__body {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 footer {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  font-family: "Libre Franklin", sans-serif;
+  position: relative;
+  font-family: 'Libre Franklin', sans-serif;
+  border-top: 6px solid rgb(207, 204, 204);
+  padding-top: 2rem;
 }
 
+.homepage {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: 1rem;
+}
 .footer__container {
   display: flex;
   justify-content: space-between;
@@ -376,8 +417,8 @@ footer {
   font-size: 1.6rem;
   margin-top: 2rem;
 }
-.footer__item li > a {
-  font-size: 1.4rem;
+.footer__item a {
+  font-size: 1.1rem;
 }
 
 .footer__bottom {
@@ -396,4 +437,13 @@ footer {
 }
 .footer__bottom ul > * {
   margin-right: 2rem;
+}
+.footer__logo {
+  width: 20rem;
+}
+.footer__item .subscribe_link {
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding: 0.4rem 0;
+  margin-top: 0.4rem;
 }
