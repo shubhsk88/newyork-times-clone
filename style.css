@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Playfair+Display:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Playfair+Display:400,700&display=swap');
 
 * {
   padding: 0;
@@ -23,7 +23,7 @@ html {
 body {
   background-color: #fff;
   font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -110,7 +110,7 @@ figcaption {
 .main__content-box {
   max-width: 600px;
   width: 100%;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   margin: 0 auto;
   grid-column: 2 / span 1;
 }
@@ -219,7 +219,7 @@ figcaption {
   display: grid;
   grid-template: 27rem 27rem / repeat(4, 1fr);
   gap: 1rem;
-  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-image: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -236,7 +236,7 @@ figcaption {
 }
 
 .inflation__section-author::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 1px;
   background-color: black;
@@ -291,4 +291,21 @@ figcaption {
   font-size: 10px;
   text-align: right;
   font-weight: 200;
+}
+.grid-item h5 {
+  font-size: 1.2rem;
+}
+.grid-item > * {
+  margin-bottom: 0.5rem;
+}
+
+.related__popular {
+  display: flex;
+  flex-direction: column;
+}
+.related__popular > * {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid grey;
 }
