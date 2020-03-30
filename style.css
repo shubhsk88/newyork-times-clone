@@ -103,11 +103,6 @@ body {
   background-color: #537995;
 }
 
-.nav__subscription > button:hover,
-.button:hover {
-  background-color: #326890;
-}
-
 .main {
   max-width: 1200px;
   width: 100%;
@@ -298,6 +293,10 @@ body {
   color: grey;
 }
 
+.footer__item a {
+  font-size: 1.1rem;
+}
+
 .main__footer a:hover {
   text-decoration: none;
 }
@@ -370,6 +369,11 @@ body {
   padding: 1rem 4rem;
 }
 
+.nav__subscription > button:hover,
+.button:hover {
+  background-color: #326890;
+}
+
 .related {
   display: flex;
   width: 100%;
@@ -384,11 +388,6 @@ body {
 
 .related__content {
   flex: 0 0 75%;
-}
-
-.related__popular {
-  flex: 1;
-  margin-left: 2.5rem;
 }
 
 .grid-container h4 {
@@ -420,6 +419,8 @@ body {
 
 .related__popular {
   display: flex;
+  flex: 1;
+  margin-left: 2.5rem;
   flex-direction: column;
 }
 
@@ -463,10 +464,6 @@ footer {
 .footer__item li > h6 {
   font-size: 1.6rem;
   margin-top: 2rem;
-}
-
-.footer__item a {
-  font-size: 1.1rem;
 }
 
 .footer__bottom {
