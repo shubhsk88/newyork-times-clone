@@ -120,7 +120,7 @@ body {
   height: 315px;
   border: none;
 }
-.main__header figcaption {
+.main__header .figure {
   width: 85%;
   font-size: 1.5rem;
   color: #636161;
@@ -318,7 +318,7 @@ body {
   left: 0;
 }
 .satellite,
-.satellite__box figcaption {
+.satellite__box .figure {
   width: 140%;
   align-self: center;
   font-size: 1.4rem;
