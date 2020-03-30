@@ -81,7 +81,6 @@ body {
 .nav__category,
 .nav__subscription > button {
   text-transform: uppercase;
-  font-weight: bold;
   margin-left: 1rem;
 }
 
@@ -156,7 +155,6 @@ body {
 
 .author {
   font-size: 2rem;
-  font-weight: bold;
   margin-top: 4rem;
 }
 
@@ -218,7 +216,6 @@ body {
 
 .quotes {
   font-size: 2.3rem;
-  font-weight: bold;
   margin-bottom: 1.5rem;
 }
 
@@ -245,7 +242,6 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 2rem 0;
-  font-weight: bold;
   position: relative;
   font-size: 1.4rem;
   margin-bottom: 2rem;
@@ -491,7 +487,6 @@ footer {
 }
 
 .footer__item .subscribe_link {
-  font-weight: bold;
   font-size: 1.7rem;
   padding: 0.4rem 0;
   margin-top: 0.4rem;
