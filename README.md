@@ -10,6 +10,9 @@ This is a copy of the New York Webpage.
 - CSS,
 - Used fontawesome.com for the icons.
 
+##Live Demo
+
+
  [Live Demo](https://rawcdn.githack.com/shubhsk88/newyork-times-clone/1d0fc557878baa9914b92ae7c4c9916a7b2d4393/index.html)
 
 
