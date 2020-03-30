@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Playfair+Display:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Playfair+Display:400,700&display=swap");
 
 * {
   padding: 0;
@@ -23,7 +23,7 @@ html {
 body {
   background-color: #fff;
   font-size: 2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header {
@@ -33,9 +33,15 @@ body {
 }
 .nav {
   display: flex;
+  padding: 0 1rem;
   justify-content: space-between;
   max-width: 1600px;
   width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   align-items: center;
   height: inherit;
@@ -96,21 +102,26 @@ body {
   margin-top: 2.5rem;
 }
 .main__header-title {
+  font-family: "Libre Franklin", sans-serif;
   font-style: italic;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin: 2rem auto;
+  width: 40rem;
 }
 .main__header-img {
   width: 100%;
 }
 
-figcaption {
+.main__header figcaption {
   width: 85%;
+  font-size: 1.5rem;
+  color: #636161;
 }
 
 .main__content-box {
   max-width: 600px;
   width: 100%;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   margin: 0 auto;
   grid-column: 2 / span 1;
 }
@@ -152,7 +163,7 @@ figcaption {
 .date {
   color: #333;
   font-size: 1.2rem;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .social > * {
@@ -166,6 +177,15 @@ figcaption {
   font-size: 1.9rem;
   letter-spacing: 0.3px;
   margin-bottom: 2.6rem;
+}
+.main__text a {
+  color: #3b6486;
+  text-decoration: underline;
+}
+.quotes {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 /* GRID TEST */
@@ -184,33 +204,45 @@ figcaption {
   justify-content: center;
   flex-direction: column;
 }
-.pre__comment {
-  border-bottom: 2px solid #e2e2e2;
-  padding-bottom: 2rem;
-}
 
 .thanking__comment {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   font-weight: bold;
-  font-size: 1.6rem;
-  border-bottom: 2px solid #e2e2e2;
+  position: relative;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
+}
+.thanking__comment::after {
+  position: absolute;
+  content: "";
+  width: 15%;
+  height: 100%;
+  border-bottom: 1px solid rgb(172, 170, 170);
+  border-top: 1px solid rgb(172, 170, 170);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
 }
 .subscribe__times {
   color: #326890;
 }
 
 .list__image li img {
-  max-width: 10rem;
+  max-width: 8rem;
+  margin-right: 0.6rem;
+}
+.main__content-editor h2 {
+  font-size: 2rem;
 }
 .list__image li {
   display: flex;
 
-  font-size: 1rem;
-  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  margin-top: 3rem;
 }
 
 /* inflation theory section */
@@ -229,7 +261,7 @@ figcaption {
   display: grid;
   grid-template: 27rem 27rem / repeat(4, 1fr);
   gap: 1rem;
-  background-image: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png');
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -246,7 +278,7 @@ figcaption {
 }
 
 .inflation__section-author::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 1px;
   background-color: black;
@@ -275,9 +307,10 @@ figcaption {
   display: flex;
   width: 100%;
 }
-.related__popular,
-.related__content {
+.grid-container,
+.related__popular {
   padding-top: 2rem;
+  margin-top: 4rem;
   border-top: 1px solid black;
 }
 
@@ -306,6 +339,7 @@ figcaption {
 }
 .grid-item h5 {
   font-size: 1.2rem;
+  height: 4rem;
 }
 .grid-item > * {
   margin-bottom: 0.5rem;
@@ -324,12 +358,14 @@ figcaption {
 .related__popular div:nth-child(1) {
   margin-top: 0;
 }
-
+.related__body {
+  font-size: 1.7rem;
+}
 footer {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 .footer__container {
