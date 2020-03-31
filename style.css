@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Playfair+Display:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Playfair+Display:400,700&display=swap');
 
 * {
   padding: 0;
@@ -25,7 +25,7 @@ html {
 body {
   background-color: #fff;
   font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -114,7 +114,7 @@ body {
 }
 
 .main__header-title {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-style: italic;
   font-size: 3.5rem;
   margin: 2rem auto;
@@ -140,9 +140,7 @@ body {
   font-size: 1.5rem;
   color: #636161;
 }
-.grid-item h5:hover {
-  color: rgb(144, 143, 143);
-}
+
 .grid-item img {
   width: 100%;
 }
@@ -150,7 +148,7 @@ body {
 .main__content-box {
   max-width: 600px;
   width: 100%;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   margin: 0 auto;
   grid-column: 2 / span 1;
 }
@@ -240,7 +238,7 @@ body {
 
 .thanking__comment::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 15%;
   height: 100%;
   border-bottom: 1px solid rgb(172, 170, 170);
@@ -304,7 +302,7 @@ body {
   display: grid;
   grid-template: 27rem 27rem / repeat(4, 1fr);
   gap: 1rem;
-  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-image: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -329,7 +327,7 @@ body {
 }
 
 .inflation__section-author::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 1px;
   background-color: black;
@@ -400,6 +398,10 @@ body {
   height: 4rem;
 }
 
+.grid-item h5:hover {
+  color: rgb(144, 143, 143);
+}
+
 .grid-item > * {
   margin-bottom: 0.5rem;
 }
@@ -435,7 +437,7 @@ footer {
   margin: 0 auto;
   width: 100%;
   position: relative;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   border-top: 6px solid rgb(207, 204, 204);
   padding-top: 2rem;
 }
