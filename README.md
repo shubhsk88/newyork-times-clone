@@ -20,7 +20,7 @@ We used the image of the inflation section as a background, and we align the tex
 ## Live Demo
 
 
- [Live Demo](https://rawcdn.githack.com/shubhsk88/newyork-times-clone/1d0fc557878baa9914b92ae7c4c9916a7b2d4393/index.html)
+ [Live Demo](https://rawcdn.githack.com/shubhsk88/newyork-times-clone/544b7583f03f9bc0db4e61214e6124dc6f735f7b/index.html)
 
 
 ## Authors
@@ -30,6 +30,7 @@ We used the image of the inflation section as a background, and we align the tex
 - Github: [@githubhandle](https://github.com/thedekerone)
 - Twitter: [@twitterhandle](https://twitter.com/mauricio_fow)
 - Linkedin: [linkedin](https://www.linkedin.com/in/mauricio-fow-aranibar-b2173514b/)
+
 
 👤 **Shubham Singh**
 
